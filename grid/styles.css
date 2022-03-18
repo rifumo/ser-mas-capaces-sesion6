@@ -4,15 +4,56 @@
     box-sizing: border-box;
 }
 
-/* Contenerdor Padres se le conoce como GRID Container */
+/* Contenerdor Padre se le conoce como GRID Container */
 .wrapper{
-
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+    gap: 20px;
 }
 
 /* A los Hijos de le conoce como GRID items */
 .item{
     background: deeppink;
     color: white;
-    width: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .item1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 8;
+} */
+
+.item1 {
+    grid-area: header;
+    background-image: url(./images/foto1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.item2 {
+    grid-area: aside;
+    background-image: url(./images/foto2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.item3 {
+    grid-area: main;
+    /* background-image: url(./images/foto3.jpg);
+    background-position: start;
+    background-size: cover; */
+}
+
+.item4 {
+    grid-area: footer;
+    /* background-image: url(./images/foto4.jpg);
+    background-position: start;
+    background-size: cover; */
 }
