@@ -17,7 +17,10 @@ body {
     font-size: 40px;
     text-align: center;
     line-height: 150px;
-    transition: all 1s;
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition-delay: 2s;
 }
 
 .caja:nth-child(1) {
@@ -25,7 +28,8 @@ body {
 }
 
 .caja:nth-child(1):hover {
-
+    background-color: black;
+    transform: skew(45deg, 20deg);
 }
 
 
