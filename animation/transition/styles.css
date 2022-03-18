@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.item:hover {
+
+}
+
+
+/* timing-fuction: easy | ease-in | ease-in-out | easy-out | linear*/
+/* clip-path: realiza un recorte  */

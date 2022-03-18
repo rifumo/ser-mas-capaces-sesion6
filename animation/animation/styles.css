@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+        background-color: #000;
+    }
+
+    100% {
+        transform: translateX(100%) translateY(100%);
+        background-color: crimson;
+    }
+}
